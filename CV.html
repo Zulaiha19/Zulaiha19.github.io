@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Zulaiha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #eef2f3;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background: linear-gradient(90deg, #0073e6, #00c6ff);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, #0073e6, #00c6ff);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #005bb5, #0099cc);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f8f9fa;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CV ZULAIHA</h1>
+        <p>Mahasiswa</p>
+    </header>
+    
+    <section class="info">
+        <h2>Kontak</h2>
+        <p>Email: zulaiha.zha19@gmail.com</p>
+        <p>Telepon: 08123456789</p>
+    </section>
+    
+    <section class="pendidikan">
+        <h2>Pendidikan</h2>
+        <p>Universitas Halu Oleo - S1 Ilmu Komputer (2023)</p>
+    </section>
+    
+    <section class="riwayat-pendidikan">
+        <h2>Riwayat Pendidikan</h2>
+        <p>SD Negeri 1 Pasarwajo (2011 - 2016)</p>
+        <p>SMP Negeri 18 Buton</p>
+        <p>SMA Negeri 1 Pasarwajo</p>
+    </section>
+    
+    <button onclick="toggleInfo()">Tampilkan Info Tambahan</button>
+    <div id="extraInfo" style="display: none;">
+        <h2>Hobi</h2>
+        <ul>
+            <li>Baca Buku</li>
+        </ul>
+    </div>
+    
+    <script>
+        function toggleInfo() {
+            var extraInfo = document.getElementById("extraInfo");
+            if (extraInfo.style.display === "none") {
+                extraInfo.style.display = "block";
+            } else {
+                extraInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
