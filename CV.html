@@ -4,103 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Zulaiha</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #eef2f3;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
-        header {
-            text-align: center;
-            background: linear-gradient(90deg, #0073e6, #00c6ff);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        section {
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            padding: 30px;
             background: white;
-            padding: 20px;
-            margin: 15px 0;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        section:hover {
-            transform: scale(1.02);
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
-        button {
-            display: block;
-            margin: 20px auto;
-            padding: 12px 20px;
-            background: linear-gradient(90deg, #0073e6, #00c6ff);
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: background 0.3s;
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #000;
         }
-        button:hover {
-            background: linear-gradient(90deg, #005bb5, #0099cc);
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        h2 {
+            border-bottom: 3px solid black;
+            padding-bottom: 5px;
+            font-size: 22px;
+            color: #444;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .column {
+            width: 48%;
         }
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
-        ul li {
-            background: #f8f9fa;
-            margin: 5px 0;
-            padding: 10px;
+        ul li::before {
+            content: '\2022';
+            color: black;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+        }
+        .contact-info {
+            background: #0b12e1;
+            color: white;
+            padding: 15px;
+            text-align: center;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>CV ZULAIHA</h1>
-        <p>Mahasiswa</p>
-    </header>
-    
-    <section class="info">
-        <h2>Kontak</h2>
-        <p>Email: zulaiha.zha19@gmail.com</p>
-        <p>Telepon: 08123456789</p>
-    </section>
-    
-    <section class="pendidikan">
-        <h2>Pendidikan</h2>
-        <p>Universitas Halu Oleo - S1 Ilmu Komputer (2023)</p>
-    </section>
-    
-    <section class="riwayat-pendidikan">
-        <h2>Riwayat Pendidikan</h2>
-        <p>SD Negeri 1 Pasarwajo (2011 - 2017)</p>
-        <p>SMP Negeri 18 Buton (2017-2019)</p>
-        <p>SMA Negeri 1 Pasarwajo (2019-2023)</p>
-    </section>
-    
-    <button onclick="toggleInfo()">Tampilkan Info Tambahan</button>
-    <div id="extraInfo" style="display: none;">
-        <h2>Hobi</h2>
-        <ul>
-            <li>Baca Buku</li>
-        </ul>
+    <div class="container">
+        <div class="header">
+            <img src="Jule.jpeg" alt="Zulaiha">
+            <h1>Zulaiha.</h1>
+        </div>
+        
+        <div class="section">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah mahasiswa Ilmu Komputer di Universitas Halu Oleo yang tertarik dengan pengembangan perangkat lunak, analisis data, dan sistem keamanan. Saya juga masi belajar tentang berbagai bahasa pemrograman dan belajar tentang kemampuan analitis yang baik dalam menyelesaikan masalah. Saat ini, saya terus belajar dan mengembangkan keterampilan saya untuk menjadi lebih siap menghadapi dunia kerja di bidang teknologi.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Pengalaman Organisasi</h2>
+            <p><strong>Koordinator Acara - LDK</strong></p>
+            <p>Membantu dan mengelolah berbagai acara, serta mengontrol kelancaran kegiatan.</p>
+            <p><strong>Divisi Konsumsi - MUBES Mahasiswa Ilmu Komputer</strong></p>
+            <p>Menbantu menyediakan konsumsi kegiatan.</p>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+                <h2>Pendidikan</h2>
+                <p>SMA Negri 1 Pasarwajo (2019– 2023)<br><strong>MIPA</strong></p>
+            </div>
+            <div class="column">
+                <h2>Kemampuan</h2>
+                <p><strong>Kemampuan NOn Teknis:</strong></p>
+                <ul>
+                    <li>Komunikasi Efektif</li>
+                    <li>Manajemen Waktu</li>
+                    <li>Dapat bekerja dalam Tim</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <h2>Kontak</h2>
+            <p>📞 +123-456-7890</p>
+            <p>📧 hello@reallygreatsite.com</p>
+            <p>📍 123 Anywhere St., Any City</p>
+        </div>
     </div>
-    
-    <script>
-        function toggleInfo() {
-            var extraInfo = document.getElementById("extraInfo");
-            if (extraInfo.style.display === "none") {
-                extraInfo.style.display = "block";
-            } else {
-                extraInfo.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
